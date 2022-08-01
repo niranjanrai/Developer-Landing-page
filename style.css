@@ -1,0 +1,380 @@
+/* POPPINS FONT FAMILY */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Righteous&display=swap");
+
+* {
+  font-family: "Poppins", sans-serif;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  outline: none;
+}
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: #f8f8fa;
+}
+
+.container {
+  max-width: 120rem;
+  margin: 0 auto;
+}
+
+.header-container {
+  background-color: #4516fe;
+  height: 70vh;
+}
+
+header {
+  max-width: 120rem;
+  margin: auto;
+  color: #fff;
+}
+
+nav {
+  padding-top: 2.5rem;
+  display: flex;
+  justify-content: end;
+  gap: 3rem;
+  align-items: center;
+}
+
+.nav-item {
+  font-size: 1.4rem;
+  cursor: pointer;
+}
+
+.nav-item-active {
+  font-size: 1.4rem;
+  border: 1px solid transparent;
+  padding: 0.7rem 1.4rem;
+  border-radius: 5px;
+  color: #4516fe;
+  background-color: #f8f8fa;
+  cursor: pointer;
+}
+.nav-item-active:hover {
+  color: #f8f8fa;
+  background-color: #4516fe;
+  border: 1px solid #fff;
+}
+
+.div-logo {
+  margin-bottom: 10rem;
+}
+
+.logo {
+  cursor: pointer;
+}
+
+.header-text img {
+  margin-bottom: 2rem;
+}
+
+.header-text h2 {
+  font-size: 3.5rem;
+  line-height: 1.6;
+  letter-spacing: 1px;
+  word-spacing: 1.2px;
+  font-weight: 500;
+}
+.header-text p {
+  font-size: 1.6rem;
+  line-height: 1.6;
+}
+.header-image {
+  position: absolute;
+  right: 0px;
+  top: 10rem;
+}
+
+/* Company Section */
+
+.companies {
+  margin-left: 10rem;
+  margin-bottom: 10rem;
+  margin-top: 2rem;
+  display: flex;
+  justify-content: start;
+  gap: 10rem;
+}
+.company-items {
+  font-size: 2.1rem;
+  line-height: 1.6;
+  font-family: "Righteous";
+  color: #000;
+  font-weight: 700;
+}
+
+.company-items:hover {
+  color: #4516fe;
+}
+/* API Section */
+.api{
+  margin-bottom: 5rem;
+}
+.api-heading {
+  font-size: 4rem;
+  font-weight: 700;
+  margin-bottom: 5rem;
+}
+
+.cards {
+  display: flex;
+  gap: 2rem;
+}
+.card-active {
+  background-color: #fff;
+}
+.card {
+  width: 20rem;
+  height: 22rem;
+  padding: 2rem 1rem;
+  border-radius: 10px;
+}
+.card:hover {
+  cursor: pointer;
+  color: #6f4bfc;
+  background-color: #fff;
+}
+
+.card-logo {
+  margin-bottom: 1rem;
+}
+.card-logo:hover {
+  cursor: pointer;
+}
+.card-head-active {
+  color: #6f4bfc;
+}
+.card-head {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+.card-body {
+  font-size: 1.2rem;
+  line-height: 1.2;
+  color: #000;
+  font-weight: 600;
+}
+
+
+
+/* Blog Section */
+
+.blog-heading{
+  font-size: 2.2rem;
+  line-height: 1.6;
+  font-weight: 700;
+  margin-bottom: 5rem;
+}
+
+.blog-cards{
+    display: flex;
+    gap: 5rem;
+    margin-bottom: 8rem;
+}
+.blog-card{
+  background-color: #fff;
+  display: flex;
+  gap: 5rem;
+  width: 100%;
+  border-radius: 42px 0px;
+  position: relative;
+}
+
+.blog-content{
+  margin-top: 2rem;
+}
+
+.blog-content h6{
+  color: #6f4bfc;
+  font-weight: 800;
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+}
+.blog-content h3{
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  /* padding: 2rem; */
+}
+.blog-content small{
+  font-size: 1.2rem;
+  color: #000;
+  font-weight: 500;
+}
+
+/* positioning of author and bottom */
+.blog-bottom{
+  position: absolute;
+  top:259px;
+  left:310px
+}
+.blog-card-bottom-image{
+  border: 4px solid white;
+  border-radius: 50%;
+}
+.blog-author{
+  position:absolute;
+  top: 135px;
+  left: 192px;
+  width: 100%;
+  font-size: 1.3rem;
+}
+
+/* FAQ Section */
+
+.faq-section{
+  background-color: #E9EDFF;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10rem;
+}
+
+.faq-content{
+  margin-left: 7rem;
+  margin-top: 3rem;
+}
+.faq-content h2{
+  font-size: 3.5rem;
+  margin-bottom: 1rem;
+}
+.faq-content h4{
+ font-size: 1.2rem;
+  font-weight: 500;
+  color: #1d1c1c;
+  margin-bottom: 1rem;
+
+}
+
+.faq-content .faq-head{
+  font-size: 1.6rem;
+  font-weight: 600;
+  margin-top: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.faq-content button{
+  display: block;
+  padding: .7rem 1.4rem;
+  color: #fff;
+  background-color: #6f4bfc;
+  border: transparent;
+  border-radius: 4px;
+}
+.faq-image img{
+  width: 100%;
+}
+
+
+/* Downlaod Section */
+
+.download-section{
+  position: relative;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10rem;
+}
+.download-content h1{
+  font-size: 2.6rem;
+}
+
+.download-content h1 span{
+  font-weight: 400;
+}
+
+form input{
+  width: 560px;
+  background: #E9EDFF;
+  color: #000;
+  font-weight: 500;
+  font-size: 1.2rem;
+  padding: 1.5rem 2rem;
+  border: transparent;
+  border-radius: 30px;
+  box-shadow: 0 6px 10px 0 rgba(0, 0, 0 , .1);
+}
+input::placeholder{
+  color: #000;
+}
+
+form button{
+  display: inline-block;
+  background-color:#5A31FC;
+  color: #fff;
+  border-radius: 30px;
+  padding: 1rem 2rem;
+  border: transparent;
+  position:absolute;
+  right: 7px;
+  top:5px;
+}
+
+
+/* Footer Section  */
+footer{
+  background-color: #4819FE;
+
+}
+
+.footer-section{
+  display: flex;
+  justify-content: space-between;
+  height: 26rem;
+  align-items: center;
+  color: #fff;
+}
+
+.footer-left img{
+  margin-bottom: 2rem;
+
+}
+
+
+.list{
+  display: flex;
+  gap: 2rem;
+  
+}
+
+.list .list-items{
+  font-size: 1.2rem;
+  line-height: 1.2;
+}
+
+.list .list-items:not(:last-child):after{
+  content: "|";
+  margin-left: 2rem;
+}
+
+
+.footer-rights{
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+.footer-right{
+  display: flex;
+  gap: 1rem;
+}
+
+.logos-list{
+  display: flex;
+  gap: 1.5rem;
+}
+
+
+.logos-list .list-items:not(:last-child):after{
+  content: "|";
+  margin-left: 1.5rem;
+}
+
+
+
+@media (max-width:)
