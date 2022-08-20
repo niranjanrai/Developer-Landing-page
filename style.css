@@ -10,9 +10,9 @@
   list-style: none;
   text-decoration: none;
   outline: none;
+  font-size: 62.5%;
 }
 html {
-  font-size: 62.5%;
 }
 
 body {
@@ -27,8 +27,8 @@ body {
 
 .header-container {
   background-color: #4516fe;
-  height: 70vh;
-  width: 100vw;
+  height: 70%;
+  width: 100%;
 }
 
 header {
@@ -74,6 +74,7 @@ nav {
 }
 .header-text {
   margin-left: 7rem;
+  width: 50%;
 }
 .header-text img {
   margin-bottom: 2rem;
@@ -91,16 +92,18 @@ nav {
   line-height: 1.6;
 }
 .header-text-container {
+  max-width: 130rem;
   display: flex;
   /* flex-wrap: wrap; */
   justify-content: space-between;
   color: #fff;
 }
 .img-cont {
-  max-width: 50%;
+  width: 50%;
 }
 .header-image {
   max-width: 100%;
+  height: auto;
   object-fit: cover;
 }
 /* *************************** */
@@ -108,7 +111,8 @@ nav {
 /* *************************** */
 
 .companies {
-  max-width: 70rem;
+  max-width: 60rem;
+
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
@@ -193,7 +197,7 @@ nav {
 .blog-card {
   background-color: #fff;
   display: flex;
-  /* flex-wrap: wrap; */
+  flex-wrap: wrap;
   gap: 5rem;
   width: 50%;
   border-radius: 42px 0px;
@@ -244,7 +248,7 @@ nav {
 .faq-section {
   background-color: #e9edff;
   display: flex;
-  justify-content: space-between;
+  /* justify-content: space-between; */
   margin-bottom: 10rem;
 }
 
@@ -272,6 +276,8 @@ nav {
 
 .faq-content button {
   display: block;
+  width: 10rem;
+  font-size: 1.2rem;
   padding: 0.7rem 1.4rem;
   color: #fff;
   background-color: #6f4bfc;
@@ -286,7 +292,6 @@ nav {
 
 .download-section {
   position: relative;
-
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -301,7 +306,7 @@ nav {
 }
 
 form input {
-  width: 560px;
+  width: 56rem;
   background: #e9edff;
   color: #000;
   font-weight: 500;
@@ -317,6 +322,8 @@ input::placeholder {
 
 form button {
   display: inline-block;
+  width: 10rem;
+  font-size: 1.2rem;
   background-color: #5a31fc;
   color: #fff;
   border-radius: 30px;
@@ -378,5 +385,3 @@ footer {
   content: "|";
   margin-left: 1.5rem;
 }
-
-@media (max-width: );
