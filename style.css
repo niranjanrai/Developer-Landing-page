@@ -1,5 +1,5 @@
 /* POPPINS FONT FAMILY */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Righteous&display=swap");
 
 * {
@@ -17,6 +17,7 @@ html {
 
 body {
   background-color: #f8f8fa;
+  /* overflow-x: hidden; */
 }
 
 .container {
@@ -27,11 +28,12 @@ body {
 .header-container {
   background-color: #4516fe;
   height: 70vh;
+  width: 100vw;
 }
 
 header {
   max-width: 120rem;
-  margin: auto;
+  margin: 0 auto;
   color: #fff;
 }
 
@@ -64,13 +66,15 @@ nav {
 }
 
 .div-logo {
-  margin-bottom: 10rem;
+  margin-bottom: 2rem;
 }
 
 .logo {
   cursor: pointer;
 }
-
+.header-text {
+  margin-left: 7rem;
+}
 .header-text img {
   margin-bottom: 2rem;
 }
@@ -86,21 +90,29 @@ nav {
   font-size: 1.6rem;
   line-height: 1.6;
 }
-.header-image {
-  position: absolute;
-  right: 0px;
-  top: 10rem;
+.header-text-container {
+  display: flex;
+  /* flex-wrap: wrap; */
+  justify-content: space-between;
+  color: #fff;
 }
-
+.img-cont {
+  max-width: 50%;
+}
+.header-image {
+  max-width: 100%;
+  object-fit: cover;
+}
+/* *************************** */
 /* Company Section */
+/* *************************** */
 
 .companies {
-  margin-left: 10rem;
-  margin-bottom: 10rem;
-  margin-top: 2rem;
+  max-width: 70rem;
   display: flex;
-  justify-content: start;
-  gap: 10rem;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  margin-bottom: 10rem;
 }
 .company-items {
   font-size: 2.1rem;
@@ -114,7 +126,7 @@ nav {
   color: #4516fe;
 }
 /* API Section */
-.api{
+.api {
   margin-bottom: 5rem;
 }
 .api-heading {
@@ -125,6 +137,7 @@ nav {
 
 .cards {
   display: flex;
+  flex-wrap: wrap;
   gap: 2rem;
 }
 .card-active {
@@ -162,64 +175,64 @@ nav {
   font-weight: 600;
 }
 
-
-
 /* Blog Section */
 
-.blog-heading{
+.blog-heading {
   font-size: 2.2rem;
   line-height: 1.6;
   font-weight: 700;
   margin-bottom: 5rem;
 }
 
-.blog-cards{
-    display: flex;
-    gap: 5rem;
-    margin-bottom: 8rem;
+.blog-cards {
+  display: flex;
+  /* flex-wrap: wrap; */
+  gap: 5rem;
+  margin-bottom: 8rem;
 }
-.blog-card{
+.blog-card {
   background-color: #fff;
   display: flex;
+  /* flex-wrap: wrap; */
   gap: 5rem;
-  width: 100%;
+  width: 50%;
   border-radius: 42px 0px;
   position: relative;
 }
 
-.blog-content{
+.blog-content {
   margin-top: 2rem;
 }
 
-.blog-content h6{
+.blog-content h6 {
   color: #6f4bfc;
   font-weight: 800;
   font-size: 1.1rem;
   margin-bottom: 1rem;
 }
-.blog-content h3{
+.blog-content h3 {
   font-size: 2rem;
   margin-bottom: 1rem;
   /* padding: 2rem; */
 }
-.blog-content small{
+.blog-content small {
   font-size: 1.2rem;
   color: #000;
   font-weight: 500;
 }
 
 /* positioning of author and bottom */
-.blog-bottom{
+.blog-bottom {
   position: absolute;
-  top:259px;
-  left:310px
+  top: 259px;
+  left: 310px;
 }
-.blog-card-bottom-image{
+.blog-card-bottom-image {
   border: 4px solid white;
   border-radius: 50%;
 }
-.blog-author{
-  position:absolute;
+.blog-author {
+  position: absolute;
   top: 135px;
   left: 192px;
   width: 100%;
@@ -228,52 +241,50 @@ nav {
 
 /* FAQ Section */
 
-.faq-section{
-  background-color: #E9EDFF;
+.faq-section {
+  background-color: #e9edff;
   display: flex;
   justify-content: space-between;
   margin-bottom: 10rem;
 }
 
-.faq-content{
+.faq-content {
   margin-left: 7rem;
   margin-top: 3rem;
 }
-.faq-content h2{
+.faq-content h2 {
   font-size: 3.5rem;
   margin-bottom: 1rem;
 }
-.faq-content h4{
- font-size: 1.2rem;
+.faq-content h4 {
+  font-size: 1.2rem;
   font-weight: 500;
   color: #1d1c1c;
   margin-bottom: 1rem;
-
 }
 
-.faq-content .faq-head{
+.faq-content .faq-head {
   font-size: 1.6rem;
   font-weight: 600;
   margin-top: 1rem;
   margin-bottom: 1.5rem;
 }
 
-.faq-content button{
+.faq-content button {
   display: block;
-  padding: .7rem 1.4rem;
+  padding: 0.7rem 1.4rem;
   color: #fff;
   background-color: #6f4bfc;
   border: transparent;
   border-radius: 4px;
 }
-.faq-image img{
+.faq-image img {
   width: 100%;
 }
 
-
 /* Downlaod Section */
 
-.download-section{
+.download-section {
   position: relative;
 
   display: flex;
@@ -281,49 +292,47 @@ nav {
   align-items: center;
   margin-bottom: 10rem;
 }
-.download-content h1{
+.download-content h1 {
   font-size: 2.6rem;
 }
 
-.download-content h1 span{
+.download-content h1 span {
   font-weight: 400;
 }
 
-form input{
+form input {
   width: 560px;
-  background: #E9EDFF;
+  background: #e9edff;
   color: #000;
   font-weight: 500;
   font-size: 1.2rem;
   padding: 1.5rem 2rem;
   border: transparent;
   border-radius: 30px;
-  box-shadow: 0 6px 10px 0 rgba(0, 0, 0 , .1);
+  box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.1);
 }
-input::placeholder{
+input::placeholder {
   color: #000;
 }
 
-form button{
+form button {
   display: inline-block;
-  background-color:#5A31FC;
+  background-color: #5a31fc;
   color: #fff;
   border-radius: 30px;
   padding: 1rem 2rem;
   border: transparent;
-  position:absolute;
+  position: absolute;
   right: 7px;
-  top:5px;
+  top: 5px;
 }
-
 
 /* Footer Section  */
-footer{
-  background-color: #4819FE;
-
+footer {
+  background-color: #4819fe;
 }
 
-.footer-section{
+.footer-section {
   display: flex;
   justify-content: space-between;
   height: 26rem;
@@ -331,50 +340,43 @@ footer{
   color: #fff;
 }
 
-.footer-left img{
+.footer-left img {
   margin-bottom: 2rem;
-
 }
 
-
-.list{
+.list {
   display: flex;
   gap: 2rem;
-  
 }
 
-.list .list-items{
+.list .list-items {
   font-size: 1.2rem;
   line-height: 1.2;
 }
 
-.list .list-items:not(:last-child):after{
+.list .list-items:not(:last-child):after {
   content: "|";
   margin-left: 2rem;
 }
 
-
-.footer-rights{
+.footer-rights {
   display: flex;
   flex-direction: column;
   gap: 3rem;
 }
-.footer-right{
+.footer-right {
   display: flex;
   gap: 1rem;
 }
 
-.logos-list{
+.logos-list {
   display: flex;
   gap: 1.5rem;
 }
 
-
-.logos-list .list-items:not(:last-child):after{
+.logos-list .list-items:not(:last-child):after {
   content: "|";
   margin-left: 1.5rem;
 }
 
-
-
-@media (max-width:)
+@media (max-width: );
