@@ -17,7 +17,7 @@ html {
 
 body {
   background-color: #f8f8fa;
-  /* overflow-x: hidden; */
+  overflow-x: hidden;
 }
 
 .container {
@@ -248,7 +248,7 @@ nav {
 .faq-section {
   background-color: #e9edff;
   display: flex;
-  /* justify-content: space-between; */
+  justify-content: space-between;
   margin-bottom: 10rem;
 }
 
@@ -379,6 +379,9 @@ footer {
 .logos-list {
   display: flex;
   gap: 1.5rem;
+}
+.list-items {
+  font-size: 1.2rem;
 }
 
 .logos-list .list-items:not(:last-child):after {

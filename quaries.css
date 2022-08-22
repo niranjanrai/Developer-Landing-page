@@ -124,6 +124,15 @@
 
 /*  */
 @media (max-width: 600px) {
+  .header-text {
+    width: 100%;
+  }
+  .img-cont {
+    width: 80%;
+  }
+  .header-image {
+    width: 100%;
+  }
   .api-heading {
     margin-left: 30%;
     margin-bottom: 5rem;
@@ -162,8 +171,8 @@
   .download-section {
     position: none;
   }
-  form input {
-    /* position: relative; */
+  .logo {
+    display: none;
   }
   form button {
     position: absolute;
